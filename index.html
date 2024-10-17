@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeh Leite Brigadeiros</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ícone na aba do navegador -->
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho com imagem de fundo -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Jeh Leite Brigadeiros</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- Botão para menu mobile -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Deliciosos Brigadeiros Artesanais</h1>
+            <p>Feitos com amor e ingredientes selecionados.</p>
+            <a href="#produtos" class="btn">Conheça nossos produtos</a>
+        </div>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre-section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A Jeh Leite Brigadeiros nasceu da paixão por doces e da vontade de compartilhar sabores únicos. Nossos brigadeiros são preparados artesanalmente, garantindo qualidade e sabor em cada mordida.</p>
+        </div>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos" class="produtos-section">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="galeria">
+                <!-- Produto 1 -->
+                <div class="produto">
+                    <img src="imagens/brigadeiro_tradicional.jpg" alt="Brigadeiro Tradicional">
+                    <h3>Brigadeiro Tradicional</h3>
+                    <p>O clássico que nunca sai de moda.</p>
+                </div>
+                <!-- Produto 2 -->
+                <div class="produto">
+                    <img src="imagens/brigadeiro_gourmet.jpg" alt="Brigadeiro Gourmet">
+                    <h3>Brigadeiro Gourmet</h3>
+                    <p>Sabores sofisticados para paladares exigentes.</p>
+                </div>
+                <!-- Produto 3 -->
+                <div class="produto">
+                    <img src="imagens/brigadeiro_festa.jpg" alt="Brigadeiro de Festa">
+                    <h3>Brigadeiro de Festa</h3>
+                    <p>Ideal para comemorações especiais.</p>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato-section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para fazer seu pedido ou tirar dúvidas.</p>
+            <div class="contato-info">
+                <div class="contato-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(XX) XXXX-XXXX</p>
+                </div>
+                <div class="contato-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>email@dominio.com</p>
+                </div>
+                <div class="contato-item">
+                    <i class="fas fa-instagram"></i>
+                    <p><a href="https://www.instagram.com/jeh_leite.brigadeiros/" target="_blank">@jeh_leite.brigadeiros</a></p>
+                </div>
+            </div>
+            <!-- Formulário de Contato -->
+            <form action="mailto:email@dominio.com" method="post" enctype="text/plain">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Jeh Leite Brigadeiros. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- Inclua o Font Awesome para os ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

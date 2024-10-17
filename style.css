@@ -1,0 +1,295 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-image: url('imagens/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #A0522D;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #8B4513;
+}
+
+/* Seção Sobre */
+.sobre-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sobre-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #A0522D;
+}
+
+.sobre-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Seção Produtos */
+.produtos-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.produtos-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produtos-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #A0522D;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    flex: 1 1 300px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #A0522D;
+}
+
+.produto p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Seção Contato */
+.contato-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contato-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contato-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #A0522D;
+}
+
+.contato-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contato-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.contato-item i {
+    font-size: 36px;
+    color: #A0522D;
+    margin-bottom: 10px;
+}
+
+.contato-item p {
+    font-size: 18px;
+}
+
+.contato-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contato-item a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form .btn {
+    width: auto;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .contato-info {
+        flex-direction: column;
+    }
+
+    .produto {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 32px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+    }
+
+    .sobre-section h2, .produtos-section h2, .contato-section h2 {
+        font-size: 28px;
+    }
+}
